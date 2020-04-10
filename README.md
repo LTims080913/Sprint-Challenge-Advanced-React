@@ -23,9 +23,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+    One reason why I believe a programer would choose to use a class component instead of a functional component is because utilizing the class component you can specify when you would like things to execute or occur unlike in a functional component where everything happens top-down with the exception of async events. 
+
 - [ ] Name three lifecycle methods and their purposes.
+
+    Three react lifecycle methods are: mounting, updating, and unmounting. The mounting stage is where your component is essentially birthed. This is the first time it loads. In mounting, you can find the constructor which initializes the state and class of your component. Then this is rendered and react updates the DOM. Lastly, the componentDidMount() is triggered. This is where initial data is pulled from. Next we move on to the updating stage. After componentDidMount() occurs, it is rendered, where react again updates the DOM and refs. Next we have something that only occurs when new props are introduced, state is set, or a force update is initiated, that is a method called componentDidUpdate(). When this is triggered, everything is then re-rendered, which also causes react to update the DOM and refs. Finally we have componentWillUnmount(). This method will occur just before the component is unmounted and destroyed. Clean up actions are normally taken care of in this method. For example, clearing timers, cancelling API calls, or clearing any caches in storage. 
+
 - [ ] What is the purpose of a custom hook?
+
+    The purpose of a custom hook is simply to keep our code DRY. They make it incredibly easy to share small portions of code across all of your files. Custom hooks are like the "mixins" of react. 
+
 - [ ] Why is it important to test our apps?
+
+    It is important to test your app in order to make sure that it works the way that it should. For example, you would not want to creat an app form where the user cannot type in the input fields. This minor issue can be resolved through testing. You can also test things like the visibility of headers, inputs, buttons, and so much more. 
+
 
 ## Project Set Up
 
