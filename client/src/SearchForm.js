@@ -34,11 +34,12 @@ export function SearchForm (props) {
            
             <input
                 name="search"
+                data-testid="search-input"
                 placeholder="Search"
                 onChange={handleChange}
                 value={form.search}
             />
-            <button type="submit">Submit</button>
+            <button data-testid="button" type="submit">Submit</button>
         </form>
     );
 }
